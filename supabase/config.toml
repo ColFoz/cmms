@@ -1,0 +1,11 @@
+# Supabase Edge Functions Configuration
+# This file persists function settings across deployments
+
+# Disable JWT verification for webhook endpoints
+# Hospitable and other webhook providers don't send JWTs
+[functions.hospitable-webhook]
+verify_jwt = false
+
+# Add other webhook functions here in the future
+# [functions.stripe-webhook]
+# verify_jwt = false
